@@ -1,3 +1,4 @@
+import { ASSET_ROOT } from './assetRoot.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -210,8 +211,8 @@ async function initApp() {
   // 2. FETCH MANIFEST & 720-SAMPLE C2 PERIODIC TRACK SPLINE JSON
   // -------------------------------------------------------------------------
   const [manifestRes, splineRes] = await Promise.all([
-    fetch('/assets/data/desk_manifest.json'),
-    fetch('/assets/data/track_spline.json'),
+    fetch(ASSET_ROOT + 'assets/data/desk_manifest.json'),
+    fetch(ASSET_ROOT + 'assets/data/track_spline.json'),
   ]);
   const manifest = await manifestRes.json();
   const splineData = await splineRes.json();
@@ -631,8 +632,8 @@ async function initApp() {
   }
 
   const REMOTE_GLB_BASE_URL = 'https://www.gstatic.com/aistudio/starter-apps/desk-racer/models';
-  const PROXY_GLB_BASE_URL = '/api/gstatic-models';
-  const ASSETS_GLB_BASE_URL = '/assets/models';
+  const PROXY_GLB_BASE_URL = ASSET_ROOT + 'api/gstatic-models';
+  const ASSETS_GLB_BASE_URL = ASSET_ROOT + 'assets/models';
 
   function tryLoadGlbAsset(fileName, key, onLoaded) {
     if (loadedGlbStatus[key] || loadingGlbInProgress[key]) return;

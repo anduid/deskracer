@@ -1,3 +1,4 @@
+import { ASSET_ROOT } from '../assetRoot.js';
 import * as THREE from 'three';
 import {
   createOakWoodTextures,
@@ -56,22 +57,22 @@ function getDeskV4PBRTextures(upgradeExternal = false) {
       deskExternalUpgraded = true;
       upgradeDeskTextureIfPresent(
         cachedDeskV4Textures.oakWoodAlbedoTex,
-        ['/assets/textures/oak_wood_2k.png?v=5.3', '/assets/textures/oak_wood_4k.png?v=5.3'],
+        [ASSET_ROOT + 'assets/textures/oak_wood_2k.png?v=5.3', ASSET_ROOT + 'assets/textures/oak_wood_4k.png?v=5.3'],
         true
       );
       upgradeDeskTextureIfPresent(
         cachedDeskV4Textures.oakWoodNormalTex,
-        ['/assets/textures/oak_wood_normal_2k.png?v=5.3', '/assets/textures/oak_wood_normal.png?v=5.3'],
+        [ASSET_ROOT + 'assets/textures/oak_wood_normal_2k.png?v=5.3', ASSET_ROOT + 'assets/textures/oak_wood_normal.png?v=5.3'],
         false
       );
       upgradeDeskTextureIfPresent(
         cachedDeskV4Textures.oakWoodRoughnessTex,
-        ['/assets/textures/oak_wood_roughness_2k.png?v=5.3', '/assets/textures/oak_wood_roughness.png?v=5.3'],
+        [ASSET_ROOT + 'assets/textures/oak_wood_roughness_2k.png?v=5.3', ASSET_ROOT + 'assets/textures/oak_wood_roughness.png?v=5.3'],
         false
       );
-      upgradeDeskTextureIfPresent(cachedDeskV4Textures.micFoamAlbedoTex, '/assets/textures/mic_foam_v4_albedo_2k.png?v=5.2', true);
-      upgradeDeskTextureIfPresent(cachedDeskV4Textures.micFoamNormalTex, '/assets/textures/mic_foam_v4_normal_2k.png?v=5.2', false);
-      upgradeDeskTextureIfPresent(cachedDeskV4Textures.micFoamRoughnessTex, '/assets/textures/mic_foam_v4_roughness_2k.png?v=5.2', false);
+      upgradeDeskTextureIfPresent(cachedDeskV4Textures.micFoamAlbedoTex, ASSET_ROOT + 'assets/textures/mic_foam_v4_albedo_2k.png?v=5.2', true);
+      upgradeDeskTextureIfPresent(cachedDeskV4Textures.micFoamNormalTex, ASSET_ROOT + 'assets/textures/mic_foam_v4_normal_2k.png?v=5.2', false);
+      upgradeDeskTextureIfPresent(cachedDeskV4Textures.micFoamRoughnessTex, ASSET_ROOT + 'assets/textures/mic_foam_v4_roughness_2k.png?v=5.2', false);
     }
     return cachedDeskV4Textures;
   }
@@ -228,22 +229,22 @@ function getDeskV4PBRTextures(upgradeExternal = false) {
     deskExternalUpgraded = true;
     upgradeDeskTextureIfPresent(
       oakWoodAlbedoTex,
-      ['/assets/textures/oak_wood_2k.png?v=5.3', '/assets/textures/oak_wood_4k.png?v=5.3'],
+      [ASSET_ROOT + 'assets/textures/oak_wood_2k.png?v=5.3', ASSET_ROOT + 'assets/textures/oak_wood_4k.png?v=5.3'],
       true
     );
     upgradeDeskTextureIfPresent(
       oakWoodNormalTex,
-      ['/assets/textures/oak_wood_normal_2k.png?v=5.3', '/assets/textures/oak_wood_normal.png?v=5.3'],
+      [ASSET_ROOT + 'assets/textures/oak_wood_normal_2k.png?v=5.3', ASSET_ROOT + 'assets/textures/oak_wood_normal.png?v=5.3'],
       false
     );
     upgradeDeskTextureIfPresent(
       oakWoodRoughnessTex,
-      ['/assets/textures/oak_wood_roughness_2k.png?v=5.3', '/assets/textures/oak_wood_roughness.png?v=5.3'],
+      [ASSET_ROOT + 'assets/textures/oak_wood_roughness_2k.png?v=5.3', ASSET_ROOT + 'assets/textures/oak_wood_roughness.png?v=5.3'],
       false
     );
-    upgradeDeskTextureIfPresent(micFoamAlbedoTex, '/assets/textures/mic_foam_v4_albedo_2k.png?v=5.2', true);
-    upgradeDeskTextureIfPresent(micFoamNormalTex, '/assets/textures/mic_foam_v4_normal_2k.png?v=5.2', false);
-    upgradeDeskTextureIfPresent(micFoamRoughnessTex, '/assets/textures/mic_foam_v4_roughness_2k.png?v=5.2', false);
+    upgradeDeskTextureIfPresent(micFoamAlbedoTex, ASSET_ROOT + 'assets/textures/mic_foam_v4_albedo_2k.png?v=5.2', true);
+    upgradeDeskTextureIfPresent(micFoamNormalTex, ASSET_ROOT + 'assets/textures/mic_foam_v4_normal_2k.png?v=5.2', false);
+    upgradeDeskTextureIfPresent(micFoamRoughnessTex, ASSET_ROOT + 'assets/textures/mic_foam_v4_roughness_2k.png?v=5.2', false);
   }
 
   cachedDeskV4Textures = {

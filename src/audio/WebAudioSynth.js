@@ -1,3 +1,4 @@
+import { ASSET_ROOT } from '../assetRoot.js';
 /**
  * Desk Racer AAA Studio Single-Mic + Clean LFE Rumble & Real Sampled Sputter
  * WebAudio Engine
@@ -84,7 +85,7 @@ function computeCrispRegimeWeights(f0) {
  * @return {!Object}
  */
 export function createDeskRacerHybridAudio(options = {}) {
-  const baseUrl = (options.baseUrl || '/assets/audio').replace(/\/$/, '');
+  const baseUrl = (options.baseUrl || ASSET_ROOT + 'assets/audio').replace(/\/$/, '');
   const masterVolume = options.masterVolume ?? 0.28;
   const cacheBust = options.cacheBust || 'v=8';
 

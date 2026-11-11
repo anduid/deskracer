@@ -1,3 +1,4 @@
+import { ASSET_ROOT } from '../assetRoot.js';
 import * as THREE from 'three';
 import { createNightWindowTexture } from './DeskDioramaBuilder.js';
 
@@ -45,45 +46,45 @@ function triggerRoomTextureUpgrades(texSet) {
   upgradeRoomTextureIfPresent(
     texSet.gemini4CandleLabelTex,
     [
-      '/assets/textures/gemini_4_candle_label_2k.png?v=5.5',
-      '/assets/textures/gemini_4_candle_label_2k.png?v=5.4',
-      '/assets/textures/gemini_4_candle_label_2k.png',
+      ASSET_ROOT + 'assets/textures/gemini_4_candle_label_2k.png?v=5.5',
+      ASSET_ROOT + 'assets/textures/gemini_4_candle_label_2k.png?v=5.4',
+      ASSET_ROOT + 'assets/textures/gemini_4_candle_label_2k.png',
     ],
     true
   );
   upgradeRoomTextureIfPresent(
     texSet.carpetAlbedoTex,
     [
-      '/assets/textures/room_carpet_2k.png?v=5.5',
-      '/assets/textures/room_carpet_2k.png?v=5.4',
-      '/assets/textures/room_carpet_2k.png',
+      ASSET_ROOT + 'assets/textures/room_carpet_2k.png?v=5.5',
+      ASSET_ROOT + 'assets/textures/room_carpet_2k.png?v=5.4',
+      ASSET_ROOT + 'assets/textures/room_carpet_2k.png',
     ],
     true
   );
   upgradeRoomTextureIfPresent(
     texSet.carpetNormalTex,
     [
-      '/assets/textures/room_carpet_normal_2k.png?v=5.5',
-      '/assets/textures/room_carpet_normal_2k.png?v=5.4',
-      '/assets/textures/room_carpet_normal_2k.png',
+      ASSET_ROOT + 'assets/textures/room_carpet_normal_2k.png?v=5.5',
+      ASSET_ROOT + 'assets/textures/room_carpet_normal_2k.png?v=5.4',
+      ASSET_ROOT + 'assets/textures/room_carpet_normal_2k.png',
     ],
     false
   );
   upgradeRoomTextureIfPresent(
     texSet.darkWalnutTex,
     [
-      '/assets/textures/room_walnut_wood_2k.png?v=5.5',
-      '/assets/textures/room_walnut_wood_2k.png?v=5.4',
-      '/assets/textures/room_walnut_wood_2k.png',
+      ASSET_ROOT + 'assets/textures/room_walnut_wood_2k.png?v=5.5',
+      ASSET_ROOT + 'assets/textures/room_walnut_wood_2k.png?v=5.4',
+      ASSET_ROOT + 'assets/textures/room_walnut_wood_2k.png',
     ],
     true
   );
   upgradeRoomTextureIfPresent(
     texSet.windowCityFacadeTex,
     [
-      '/assets/textures/window_city_facade_2k.png?v=5.5',
-      '/assets/textures/window_city_facade_2k.png?v=5.4',
-      '/assets/textures/window_city_facade_2k.png',
+      ASSET_ROOT + 'assets/textures/window_city_facade_2k.png?v=5.5',
+      ASSET_ROOT + 'assets/textures/window_city_facade_2k.png?v=5.4',
+      ASSET_ROOT + 'assets/textures/window_city_facade_2k.png',
     ],
     true
   );

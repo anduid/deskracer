@@ -83,6 +83,7 @@ const gstaticModelsProxy = {
 };
 
 export default defineConfig({
+  base: './',
   build: { chunkSizeWarningLimit: 4000 },
   plugins: [fetchGstaticModelsOnBuild()],
   server: {
